@@ -13,8 +13,8 @@ from selenium.webdriver.common.by import By
 
 async def pdisk_login(username: str, password: str):
     print("Bot on Standby ...")
-    login_url = "https://www.pdisk.net/login?type=login"
-    get_id_page_url = "https://www.pdisk.net/withdraw"
+    login_url = "https://www.pdisk.pro/login?type=login"
+    get_id_page_url = "https://www.pdisk.pro/withdraw"
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     options.add_argument("--disable-dev-shm-usage")
