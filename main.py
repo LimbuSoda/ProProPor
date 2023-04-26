@@ -35,7 +35,7 @@ class Configs(object):
     AUTH_CHATS = list(set(int(x) for x in os.environ.get("AUTH_CHATS", "0").split()))
     # Which PDisk Domain?
     PDISK_DOMAINS = [
-        "https://www.cdink.net/",
+        "https://www.pdisk.pro/",
         "https://www.cofilink.com/",
         "https://www.pdisk1.net/",
         "https://www.pdisk.net/"
@@ -71,7 +71,7 @@ async def text_handler(_, m: Message):
         traceback.print_exc()
         try: await editable.edit("Failed to search!",
                                  reply_markup=InlineKeyboardMarkup([
-                                     [InlineKeyboardButton("Sumpot Group", url="https://t.me/JoinOT")]
+                                     [InlineKeyboardButton("Main Channel", url="https://telegram.me/MoviGenX")]
                                  ]))
         except MessageNotModified: pass
     elif not response["data"]["list"]:
